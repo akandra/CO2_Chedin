@@ -1,0 +1,23 @@
+# Static configuration and normal modes eigen-vectors
+# carbondioxide
+SC
+0 0  0     # C
+0 0  1.161 # O
+0 0 -1.161 # O
+NML # linear molecule
+# bend1
+ 1 0 0
+-1 0 0 
+-1 0 0 
+# bend2
+0  1 0
+0 -1 0 
+0 -1 0 
+# s-str
+0 0  0
+0 0 -1 
+0 0  1 
+# a-str
+0 0  1
+0 0 -1 
+0 0 -1 

@@ -1,0 +1,7 @@
+chedin.c
+pyproject.toml
+setup.py
+ChedinPot_calculator.egg-info/PKG-INFO
+ChedinPot_calculator.egg-info/SOURCES.txt
+ChedinPot_calculator.egg-info/dependency_links.txt
+ChedinPot_calculator.egg-info/top_level.txt

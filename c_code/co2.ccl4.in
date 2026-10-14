@@ -1,0 +1,43 @@
+# System specification file
+#
+# Simulation of a CARBON DIOXIDE molecule in CARBON TETRACHLORIDE 
+# with Kihara potential (the third parameters shoul be turned to zero
+# if in the beginning the bad configuration is given)
+#
+# Input units in Stisu are amu, angstrom and 0.1ps 
+# so the energy dimension parameters must be in kJ/mole
+# and the length dimension parameters must be in angstrom
+#
+# Input string should be less 128 symbols
+# 
+CarbonDioxide 1
+#
+# The Chedin's potential with 28 parameters is used here for CO2
+# (see Chedin A. and Teffo J.-L. J.Mol.Spectrosc. 107(1984)333)
+#
+POT chedin2 
+1 2 3  8.49441 4.01316 14.7322
+POT chedin34
+1 2 3  -0.169658 -0.349882 -0.915698 -0.00309579 0.00762742 -0.0349418 0.00988316 -0.0332545 -0.0148403 
+POT chedin5
+1 2 3  0.000567461 0.000109297 0.00727883 -0.00135831 -0.00149995 0.00120956
+POT chedin6
+1 2 3  2.53031e-5 -1.00491e-3 -1.23064e-3 -1.06667e-4 -5.10572e-4 -1.67567e-3 8.90746e-5 -1.3157e-4 -1.08281e-5 -1.38092e-4
+END_POT
+# Atom C must be first
+1	0	0	0	12	0	C 
+2	0	0.15	1.3	16	0	O
+2	0	0	-1.10
+Tetrachloride 216
+3	0	0	0	153.84	0	CCl4
+end
+#
+# Kihara potential with 3 parameters is used 
+# for C-CCl4, O-CCl4 and CCl4-CCl4 interactions.
+# Parameters: 4 epsilon (kJ/mole), sigma (Angstroem) and a (Angstroem)
+#
+Kihara
+1 3	 6.75	4.35	1.10 
+2 3	 7.81	4.15	1.05 
+3 3	18.3	5.30	1.80 # parameters are in respect with TD data
+end
